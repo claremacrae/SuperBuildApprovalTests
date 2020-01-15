@@ -8,7 +8,8 @@ enable_testing()
 
 # -------------------------------------------------------------------
 # Catch2
-set(CATCH_BUILD_TESTING false)
+set(CATCH_BUILD_TESTING
+        OFF CACHE BOOL "" FORCE)
 add_subdirectory(
         ../cpp/Catch2
         ${CMAKE_CURRENT_BINARY_DIR}/catch2
@@ -35,9 +36,12 @@ add_subdirectory(
 # Boost.ut
 # ec49196855078d98738f54023b488b2f85299826 is the first commit that works with FetchContent
 # TODO Add a Boost.UT issue asking for option names to have a prefix added
-set(BUILD_BENCHMARKS OFF)
-set(BUILD_EXAMPLES OFF)
-set(BUILD_TESTS OFF)
+set(BUILD_BENCHMARKS
+        OFF CACHE BOOL "" FORCE)
+set(BUILD_EXAMPLES
+        OFF CACHE BOOL "" FORCE)
+set(BUILD_TESTS
+        OFF CACHE BOOL "" FORCE)
 
 add_subdirectory(
         ../Testing/ut
@@ -57,8 +61,15 @@ endif()
 # -------------------------------------------------------------------
 # ApprovalTests.cpp
 
-set(APPROVAL_TESTS_BUILD_ALL_CONTENTS true)
-set(APPROVAL_TESTS_BUILD_ADD_TESTS true)
+set(APPROVAL_TESTS_BUILD_THIRD_PARTY
+        OFF CACHE BOOL "" FORCE)
+set(APPROVAL_TESTS_BUILD_TESTING
+        ON CACHE BOOL "" FORCE)
+set(APPROVAL_TESTS_BUILD_EXAMPLES
+        ON CACHE BOOL "" FORCE)
+set(APPROVAL_TESTS_ENABLE_CMAKE_INTEGRATION_TESTS
+        ON CACHE BOOL "" FORCE)
+
 add_subdirectory(
         ../ApprovalTests/ApprovalTests.cpp
         ${CMAKE_CURRENT_BINARY_DIR}/approval_tests_cpp
