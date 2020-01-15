@@ -11,7 +11,7 @@ set(BUILD_TESTS
 
 add_subdirectory(
         ../../Testing/ut
-        ${CMAKE_CURRENT_BINARY_DIR}/ut
+        ${CMAKE_CURRENT_BINARY_DIR}/build
 )
 
 if ("${CMAKE_CXX_COMPILER_ID}" MATCHES "Clang")

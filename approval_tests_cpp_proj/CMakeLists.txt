@@ -12,5 +12,5 @@ set(APPROVAL_TESTS_BUILD_CMAKE_INTEGRATION_TESTING
 
 add_subdirectory(
         ../../ApprovalTests/ApprovalTests.cpp
-        ${CMAKE_CURRENT_BINARY_DIR}/approval_tests_cpp
+        ${CMAKE_CURRENT_BINARY_DIR}/build
 )
