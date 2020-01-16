@@ -6,6 +6,10 @@ project(SuperBuildApprovalTests LANGUAGES CXX)
 set_property(GLOBAL PROPERTY CTEST_TARGETS_ADDED 1)
 enable_testing()
 
+# TODO Add variables to control each of the sub-directories
+# TODO Only add the source-dirs of they exist
+# TODO Add a variable to control the location of the dependencies
+
 add_subdirectory(catch2_proj)
 add_subdirectory(doctest_proj)
 add_subdirectory(googletest_proj)
