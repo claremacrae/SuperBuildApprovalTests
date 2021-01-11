@@ -12,12 +12,6 @@ enable_testing()
 
 add_subdirectory(dependencies)
 
-add_subdirectory(catch2_proj)
-add_subdirectory(cpputest_proj)
-add_subdirectory(doctest_proj)
-add_subdirectory(googletest_proj)
-add_subdirectory(ut_proj)
-
 add_subdirectory(approval_tests_cpp_proj)
 add_subdirectory(approval_tests_cpp_starter_project_proj)
 
