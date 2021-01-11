@@ -18,4 +18,5 @@ add_subdirectory(approval_tests_cpp_starter_project_proj)
 add_subdirectory(approval_tests_cpp_qt_proj)
 add_subdirectory(approval_tests_cpp_qt_starter_project_proj)
 
+add_subdirectory(approval_tests_cpp_demos_proj)
 add_subdirectory(approval_tests_cpp_nursery_proj)
