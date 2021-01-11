@@ -10,7 +10,9 @@ enable_testing()
 # TODO Only add the source-dirs of they exist
 # TODO Add a variable to control the location of the dependencies
 
+add_subdirectory(boost_proj)
 add_subdirectory(catch2_proj)
+add_subdirectory(cpputest_proj)
 add_subdirectory(doctest_proj)
 add_subdirectory(googletest_proj)
 add_subdirectory(ut_proj)
