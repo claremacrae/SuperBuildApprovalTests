@@ -15,6 +15,6 @@ set(APPROVAL_TESTS_BUILD_CMAKE_INTEGRATION_TESTING
         ON CACHE BOOL "" FORCE)
 
 add_subdirectory(
-        ../../ApprovalTests/ApprovalTests.cpp
+        ${CMAKE_SOURCE_DIR}/../ApprovalTests/ApprovalTests.cpp
         ${CMAKE_CURRENT_BINARY_DIR}/build
 )

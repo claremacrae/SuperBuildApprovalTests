@@ -9,6 +9,6 @@ set(TESTS OFF CACHE BOOL "")
 set(C++11 ON CACHE BOOL "Compile with C++11 support")
 
 add_subdirectory(
-        ../../Testing/cpputest
+        ${CMAKE_SOURCE_DIR}/../Testing/cpputest
         ${CMAKE_CURRENT_BINARY_DIR}/cpputest_build
 )
