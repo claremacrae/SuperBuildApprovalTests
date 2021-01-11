@@ -5,6 +5,6 @@
 set(gtest_force_shared_crt
         ON CACHE BOOL "" FORCE)
 add_subdirectory(
-        ../../Testing/googletest
+        ${CMAKE_SOURCE_DIR}/../Testing/googletest
         ${CMAKE_CURRENT_BINARY_DIR}/build
 )

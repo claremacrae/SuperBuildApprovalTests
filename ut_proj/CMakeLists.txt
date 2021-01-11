@@ -10,7 +10,7 @@ set(BUILD_TESTS
         OFF CACHE BOOL "" FORCE)
 
 add_subdirectory(
-        ../../Testing/ut
+        ${CMAKE_SOURCE_DIR}/../Testing/ut
         ${CMAKE_CURRENT_BINARY_DIR}/build
 )
 
