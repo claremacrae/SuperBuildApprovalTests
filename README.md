@@ -1,5 +1,14 @@
 # SuperBuildApprovalTests
 
+-----
+
+**NOTE: This project is archived.** It was too much effort to keep it up-to-date with changes to all the dependencies. These days, I just open multiple CLion windows with different projects open, or use one of these sub-direcotries in [ApprovalTests.cpp.CMakeSamples](https://github.com/claremacrae/ApprovalTests.cpp.CMakeSamples):
+
+* [dev_approvals/](https://github.com/claremacrae/ApprovalTests.cpp.CMakeSamples/tree/main/dev_approvals)
+* [dev_approvals_fetch_content/](https://github.com/claremacrae/ApprovalTests.cpp.CMakeSamples/tree/main/dev_approvals_fetch_content)
+
+-----
+
 A way to build all ApprovalTests projects and their dependencies in one CLion project.
 
 ## Benefits
